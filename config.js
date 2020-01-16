@@ -1,5 +1,5 @@
 var config = {
-	port: 1720,
+	port: process.env.PORT,
 	version: 203,
 	sys: 'win'
 }
