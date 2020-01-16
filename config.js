@@ -1,5 +1,8 @@
+const PORT = process.env.PORT || 80;
+console.log('Heroku allowed port:' + PORT);
+
 var config = {
-	port: process.env.PORT,
+	port: PORT,
 	version: 203,
 	sys: 'win'
 }
