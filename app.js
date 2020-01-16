@@ -18,7 +18,7 @@ initFolders();
 
 // Route and Create server
 app.use( '/', express.static( __dirname + '/www/') );
-server.listen(config.port);
+server.listen(process.env.PORT);
 console.log('Server is running @ localhost:' + config.port);
 
 if(os.platform() == 'win32') {
